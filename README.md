@@ -1,3 +1,27 @@
-# Professional README Generator Starter Code
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+ # Readmegen
+
+## Description
+sample project
+
+## Installation
+undefined
+
+## Usage
+no
+
+
+## License
+MIT
+
+
+## Contributing
+no
+
+## Tests
+no
+
+
+## Questions
+pradogeovana07
+
