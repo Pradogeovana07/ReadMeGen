@@ -1,19 +1,16 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "README.json"
+    
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "faker": "^6.6.6",
-    "glob": "^8.1.0",
-    "inquirer": "^6.3.1",
-    "slugify": "^1.6.5",
-    "yaml": "^2.2.1"
+    "inquirer": "^6.3.1"
+    
   }
 }
