@@ -1,7 +1,5 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 
-const { utils } = require("seed/lib/seed");
-
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
 
@@ -14,41 +12,25 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# // # ${answers.title}
+function generateMarkdown(answers) {
+  return `# ${answers.title}
 
-   ## Description
+  # Description
     ${answers.description}
   
-    ## Installation
+  # Installation
     ${answers.installation}
-  
-  
-    ## Usage
-  
+  # Usage
     ${answers.usage}
-  
-  
-    ## License
-  
+  # License
     ${answers.license}
-  
-  
-  
-     ## Contributing
-  
-      ${answers.contributing}
-  
-  
-       ## Tests
-  
+  # Contributing
+    ${answers.contributing}
+  # Tests
     ${answers.tests}
-  
-  
-  
-     ${answers.questions}
-  
-      )`}
+  # Github
+    ${answers.github}
+  `}
   
 
 

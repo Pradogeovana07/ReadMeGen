@@ -50,92 +50,13 @@ inquirer.prompt([
     {
         type:"input",
         message:"What is your Github username?",
-        name:"questions"
+        name:"github"
     }
 ]).then((data)=> {
-    const filename = `${data.name}.json`;
+    const filename = `README.md`;
 
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) => {
+    fs.writeFile(filename, generateMarkdown(data), (err) => {
         err ? console.log(err) : console.log("Your README was created!")
     });
   
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- inquirer.prompt(questions, answers)`(
-
-
- # ${answers.title}
-
- ## Description
-  ${answers.description}
-
-  ## Installation
-   ${answers.installation}
-
-
-  ## Usage
-
-  ${answers.usage}
-
-
-  ## License
-
- ${answers.license}
-
-
-
-## Contributing
-
-   ${answers.contributing}
-
-
-     ## Tests
-
-  ${answers.tests}
-
-
-
-  ${answers.questions}
-
-   )`;
- 
-// // // TODO: Create a function to write README file
-
-function buildReadme(){
-    fs.writeFileSync('README.md')
-}
-
-// // TODO: Create a function to initialize app
- function init() {
-    inquirer.prompt(questions)
-    .then(function(data){
-        fs.appendFileSync('README.md');
-        console.log(data)
-    
-})
- };
-
-// // Function call to initialize app
-init()
-  
-
-
-
+});
